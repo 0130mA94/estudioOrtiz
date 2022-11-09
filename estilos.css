@@ -108,6 +108,10 @@ h1 {
   background-image: linear-gradient(to left, black, red);
 }
 
+.body {
+  width: 100%;
+}
+
 .sec {
   height: auto;
   width: 20em;
@@ -129,7 +133,7 @@ h1 {
 }
 
 .item1 {
-  background-image: url(./multi/Atardeceres.jpg);
+  background-image: url(./multi/Tormenta\ perfecta.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -343,6 +347,41 @@ footer {
   .item:hover {
     transform: scale(1.1);
     transition: all 1.5s;
+  }
+  .item1 {
+    background-image: url(./multi/Tormenta\ perfecta.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .item2 {
+    background-image: url(./multi/Calma\ después\ de\ la\ tormenta.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .item3 {
+    background-image: url(./multi/Día\ de\ campo.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .item4 {
+    background-image: url(./multi/Mar\ y\ Aves.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .item5 {
+    background-image: url(./multi/Mates\ de\ Domingo.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .item6 {
+    background-image: url(./multi/Noche\ estrellada.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .item7 {
+    background-image: url(./multi/placeres.jpg);
+    background-size: cover;
+    background-position: center;
   }
   .video {
     background-image: linear-gradient(to top, red, white, black);
