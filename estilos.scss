@@ -112,11 +112,13 @@ h1 {
 .fondo {
     background-color: black;
     background-image: linear-gradient(to left, black, red);
-    width: 100vh;
+   
 
 
 }
-
+.body{
+    width: 100%;
+}
 .sec {
     height: auto;
     width: 20em;
@@ -139,48 +141,40 @@ h1 {
     transform: scale(1.2);
     transition: all 1.5s;
 }
-
-.item1 {
-    background-image: url(./multi/Atardeceres.jpg);
+@mixin item ($fondofoto) {
+    background-image: $fondofoto;
     background-size: cover;
     background-position: center;
+    
+}
+.item1 {
+    @include item(url(./multi/Tormenta\ perfecta.jpg))
 
 }
 
 .item2 {
-    background-image: url(./multi/Calma\ después\ de\ la\ tormenta.jpg);
-    background-size: cover;
-    background-position: center;
+    @include item (url(./multi/Calma\ después\ de\ la\ tormenta.jpg))
 }
 
 .item3 {
-    background-image: url(./multi/Día\ de\ campo.jpg);
-    background-size: cover;
-    background-position: center;
+    @include item (url(./multi/Día\ de\ campo.jpg))    
 }
 
 .item4 {
-    background-image: url(./multi/Mar\ y\ Aves.jpg);
-    background-size: cover;
-    background-position: center;
+    @include item (url(./multi/Mar\ y\ Aves.jpg))
 }
 
 .item5 {
-    background-image: url(./multi/Mates\ de\ Domingo.jpg);
-    background-size: cover;
-    background-position: center;
-}
+    @include item(url(./multi/Mates\ de\ Domingo.jpg))
+    }
 
 .item6 {
-    background-image: url(./multi/Noche\ estrellada.jpg);
-    background-size: cover;
-    background-position: center;
+    @include item(url(./multi/Noche\ estrellada.jpg))
 }
 
 .item7 {
-    background-image: url(./multi/placeres.jpg);
-    background-size: cover;
-    background-position: center;
+    @include item(url(./multi/placeres.jpg))
+    
 }
 
 .fotoChris {
@@ -382,7 +376,41 @@ footer {
         transform: scale(1.1);
         transition: all 1.5s;
     }
+    @mixin item ($fondofoto) {
+        background-image: $fondofoto;
+        background-size: cover;
+        background-position: center;
+        
+    }
+    .item1 {
+        @include item(url(./multi/Tormenta\ perfecta.jpg))
     
+    }
+    
+    .item2 {
+        @include item (url(./multi/Calma\ después\ de\ la\ tormenta.jpg))
+    }
+    
+    .item3 {
+        @include item (url(./multi/Día\ de\ campo.jpg))    
+    }
+    
+    .item4 {
+        @include item (url(./multi/Mar\ y\ Aves.jpg))
+    }
+    
+    .item5 {
+        @include item(url(./multi/Mates\ de\ Domingo.jpg))
+        }
+    
+    .item6 {
+        @include item(url(./multi/Noche\ estrellada.jpg))
+    }
+    
+    .item7 {
+        @include item(url(./multi/placeres.jpg))
+        
+    }
 
     .video {
         background-image: linear-gradient(to top, red, white, black);
