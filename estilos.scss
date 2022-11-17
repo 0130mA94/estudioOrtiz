@@ -10,7 +10,7 @@ header {
     height: 80px;
     width: 100%;
     background-color: red;
-    background-image: linear-gradient(to right, black, red, white);
+    background-image: radial-gradient(red, black);
     font-family: 'Yuji Syuku', serif;
     font-size: 30px;
     display: flex;
@@ -336,7 +336,6 @@ footer {
 
     /* body {
         height: 100vh;
-
     } */
 
     .consulta {
